@@ -2,19 +2,19 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Common">
-      <UniqueIdentifier>{ebe5b75e-8a47-4788-b9cf-5b2ab0027380}</UniqueIdentifier>
+      <UniqueIdentifier>{bc187bd5-e571-44b4-a943-386bc33fb10a}</UniqueIdentifier>
     </Filter>
     <Filter Include="Util">
-      <UniqueIdentifier>{61b78d35-8643-4aee-b67e-58f1a737b0f6}</UniqueIdentifier>
+      <UniqueIdentifier>{80f66236-1f76-44cc-b0c0-6c48aeaac7f5}</UniqueIdentifier>
     </Filter>
     <Filter Include="Sock">
-      <UniqueIdentifier>{69793a84-22d3-484c-9c3a-3b378df3f32a}</UniqueIdentifier>
+      <UniqueIdentifier>{1bbb92a7-1e28-4eb1-bd60-7231a5d76ea6}</UniqueIdentifier>
     </Filter>
     <Filter Include="RTSP">
-      <UniqueIdentifier>{bdedba72-b46f-40d6-b2ea-d36fba1056bf}</UniqueIdentifier>
+      <UniqueIdentifier>{3b71cc6e-667d-4944-a3e8-219f029496cc}</UniqueIdentifier>
     </Filter>
     <Filter Include="OS_Common">
-      <UniqueIdentifier>{c0b909b5-2ece-48d0-bb48-2c45cdc3e3db}</UniqueIdentifier>
+      <UniqueIdentifier>{f75c836c-d62e-491a-8cbd-7ee57d74988f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -29,6 +29,9 @@
     </ClInclude>
     <ClInclude Include="..\..\Common\RTSPCommonEnv.h">
       <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Util\Base64.hh">
+      <Filter>Util</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Util\our_md5.h">
       <Filter>Util</Filter>
@@ -60,19 +63,7 @@
     <ClInclude Include="..\..\RTSPServer\RTSP\ServerMediaSession.h">
       <Filter>RTSP</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Sock\NetCommon.h">
-      <Filter>Sock</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\OS_Common\Event.h">
-      <Filter>OS_Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\OS_Common\Mutex.h">
-      <Filter>OS_Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\OS_Common\MySemaphore.h">
-      <Filter>OS_Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\OS_Common\Thread.h">
+    <ClInclude Include="..\..\OS_Common\NetCommon.h">
       <Filter>OS_Common</Filter>
     </ClInclude>
   </ItemGroup>
@@ -122,22 +113,5 @@
     <ClCompile Include="..\..\RTSPServer\RTSP\ServerMediaSession.cpp">
       <Filter>RTSP</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\OS_Common\Event.cpp">
-      <Filter>OS_Common</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\OS_Common\Mutex.cpp">
-      <Filter>OS_Common</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\OS_Common\MySemaphore.cpp">
-      <Filter>OS_Common</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\OS_Common\Thread.cpp">
-      <Filter>OS_Common</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\..\Util\Base64.hh">
-      <Filter>Util</Filter>
-    </None>
   </ItemGroup>
 </Project>

@@ -7,3 +7,5 @@ win32/RTSPClientLib/x64/
 win32/RTSPClientTest/.vs/
 win32/RTSPClientTest/RTSPClientTest.vcxproj.user
 win32/RTSPClientTest/x64/
+.vs/
+x64/
