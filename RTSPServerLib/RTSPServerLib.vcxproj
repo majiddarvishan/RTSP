@@ -96,7 +96,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\..\Common;..\..\Util;..\..\Sock;..\..\RTCP;..\..\OS_Common;..\..\RTSPServer\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Common;..\Util;..\Sock;..\RTCP;..\OS_Common;..\RTSPServer\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;RTSP_SERVER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -112,7 +112,7 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\..\Common;..\..\Util;..\..\Sock;..\..\RTCP;..\..\OS_Common;..\..\RTSPServer\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Common;..\Util;..\Sock;..\RTCP;..\OS_Common;..\RTSPServer\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;RTSP_SERVER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -126,7 +126,7 @@
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>..\..\Common;..\..\Util;..\..\Sock;..\..\RTCP;..\..\OS_Common;..\..\RTSPServer\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Common;..\Util;..\Sock;..\RTCP;..\OS_Common;..\RTSPServer\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;RTSP_SERVER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -142,7 +142,7 @@
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>..\..\Common;..\..\Util;..\..\Sock;..\..\RTCP;..\..\OS_Common;..\..\RTSPServer\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Common;..\Util;..\Sock;..\RTCP;..\OS_Common;..\RTSPServer\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;RTSP_SERVER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -152,39 +152,39 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Common\RTSPCommon.h" />
-    <ClInclude Include="..\..\Common\RTSPCommonEnv.h" />
-    <ClInclude Include="..\..\OS_Common\NetCommon.h" />
-    <ClInclude Include="..\..\RTSPServer\Common\MyList.h" />
-    <ClInclude Include="..\..\RTSPServer\Common\NetAddress.h" />
-    <ClInclude Include="..\..\RTSPServer\RTSP\ClientSocket.h" />
-    <ClInclude Include="..\..\RTSPServer\RTSP\LiveServerMediaSession.h" />
-    <ClInclude Include="..\..\RTSPServer\RTSP\OnDemandServerMediaSession.h" />
-    <ClInclude Include="..\..\RTSPServer\RTSP\RTSPServer.h" />
-    <ClInclude Include="..\..\RTSPServer\RTSP\ServerMediaSession.h" />
-    <ClInclude Include="..\..\Sock\MySock.h" />
-    <ClInclude Include="..\..\Sock\SockCommon.h" />
-    <ClInclude Include="..\..\Sock\TaskScheduler.h" />
-    <ClInclude Include="..\..\Util\Base64.hh" />
-    <ClInclude Include="..\..\Util\our_md5.h" />
-    <ClInclude Include="..\..\Util\util.h" />
+    <ClInclude Include="..\Common\RTSPCommon.h" />
+    <ClInclude Include="..\Common\RTSPCommonEnv.h" />
+    <ClInclude Include="..\OS_Common\NetCommon.h" />
+    <ClInclude Include="..\RTSPServer\Common\MyList.h" />
+    <ClInclude Include="..\RTSPServer\Common\NetAddress.h" />
+    <ClInclude Include="..\RTSPServer\RTSP\ClientSocket.h" />
+    <ClInclude Include="..\RTSPServer\RTSP\LiveServerMediaSession.h" />
+    <ClInclude Include="..\RTSPServer\RTSP\OnDemandServerMediaSession.h" />
+    <ClInclude Include="..\RTSPServer\RTSP\RTSPServer.h" />
+    <ClInclude Include="..\RTSPServer\RTSP\ServerMediaSession.h" />
+    <ClInclude Include="..\Sock\MySock.h" />
+    <ClInclude Include="..\Sock\SockCommon.h" />
+    <ClInclude Include="..\Sock\TaskScheduler.h" />
+    <ClInclude Include="..\Util\Base64.hh" />
+    <ClInclude Include="..\Util\our_md5.h" />
+    <ClInclude Include="..\Util\util.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Common\RTSPCommon.cpp" />
-    <ClCompile Include="..\..\Common\RTSPCommonEnv.cpp" />
-    <ClCompile Include="..\..\RTSPServer\Common\NetAddress.cpp" />
-    <ClCompile Include="..\..\RTSPServer\RTSP\ClientSocket.cpp" />
-    <ClCompile Include="..\..\RTSPServer\RTSP\LiveServerMediaSession.cpp" />
-    <ClCompile Include="..\..\RTSPServer\RTSP\OnDemandServerMediaSession.cpp" />
-    <ClCompile Include="..\..\RTSPServer\RTSP\RTSPServer.cpp" />
-    <ClCompile Include="..\..\RTSPServer\RTSP\ServerMediaSession.cpp" />
-    <ClCompile Include="..\..\Sock\MySock.cpp" />
-    <ClCompile Include="..\..\Sock\SockCommon.cpp" />
-    <ClCompile Include="..\..\Sock\TaskScheduler.cpp" />
-    <ClCompile Include="..\..\Util\Base64.cpp" />
-    <ClCompile Include="..\..\Util\our_md5.c" />
-    <ClCompile Include="..\..\Util\our_md5hl.c" />
-    <ClCompile Include="..\..\Util\util.cpp" />
+    <ClCompile Include="..\Common\RTSPCommon.cpp" />
+    <ClCompile Include="..\Common\RTSPCommonEnv.cpp" />
+    <ClCompile Include="..\RTSPServer\Common\NetAddress.cpp" />
+    <ClCompile Include="..\RTSPServer\RTSP\ClientSocket.cpp" />
+    <ClCompile Include="..\RTSPServer\RTSP\LiveServerMediaSession.cpp" />
+    <ClCompile Include="..\RTSPServer\RTSP\OnDemandServerMediaSession.cpp" />
+    <ClCompile Include="..\RTSPServer\RTSP\RTSPServer.cpp" />
+    <ClCompile Include="..\RTSPServer\RTSP\ServerMediaSession.cpp" />
+    <ClCompile Include="..\Sock\MySock.cpp" />
+    <ClCompile Include="..\Sock\SockCommon.cpp" />
+    <ClCompile Include="..\Sock\TaskScheduler.cpp" />
+    <ClCompile Include="..\Util\Base64.cpp" />
+    <ClCompile Include="..\Util\our_md5.c" />
+    <ClCompile Include="..\Util\our_md5hl.c" />
+    <ClCompile Include="..\Util\util.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

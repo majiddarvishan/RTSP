@@ -44,7 +44,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\..\Common;..\..\Util;..\..\Sock;..\..\RTCP;..\..\OS_Common;..\..\RTSPServer\Common"
+				AdditionalIncludeDirectories="..\Common;..\Util;..\Sock;..\RTCP;..\OS_Common;..\RTSPServer\Common"
 				PreprocessorDefinitions="WIN32;_DEBUG;_LIB;RTSP_SERVER"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -107,7 +107,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\..\Common;..\..\Util;..\..\Sock;..\..\RTCP;..\..\OS_Common;..\..\RTSPServer\Common"
+				AdditionalIncludeDirectories="..\Common;..\Util;..\Sock;..\RTCP;..\OS_Common;..\RTSPServer\Common"
 				PreprocessorDefinitions="WIN32;_DEBUG;_LIB;RTSP_SERVER"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -171,7 +171,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				EnableIntrinsicFunctions="true"
-				AdditionalIncludeDirectories="..\..\Common;..\..\Util;..\..\Sock;..\..\RTCP;..\..\OS_Common;..\..\RTSPServer\Common"
+				AdditionalIncludeDirectories="..\Common;..\Util;..\Sock;..\RTCP;..\OS_Common;..\RTSPServer\Common"
 				PreprocessorDefinitions="WIN32;NDEBUG;_LIB;RTSP_SERVER"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
@@ -235,7 +235,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				EnableIntrinsicFunctions="true"
-				AdditionalIncludeDirectories="..\..\Common;..\..\Util;..\..\Sock;..\..\RTCP;..\..\OS_Common;..\..\RTSPServer\Common"
+				AdditionalIncludeDirectories="..\Common;..\Util;..\Sock;..\RTCP;..\OS_Common;..\RTSPServer\Common"
 				PreprocessorDefinitions="WIN32;NDEBUG;_LIB;RTSP_SERVER"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
@@ -279,31 +279,31 @@
 			Name="Common"
 			>
 			<File
-				RelativePath="..\..\RTSPServer\Common\MyList.h"
+				RelativePath="..\RTSPServer\Common\MyList.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\RTSPServer\Common\NetAddress.cpp"
+				RelativePath="..\RTSPServer\Common\NetAddress.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\RTSPServer\Common\NetAddress.h"
+				RelativePath="..\RTSPServer\Common\NetAddress.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\Common\RTSPCommon.cpp"
+				RelativePath="..\Common\RTSPCommon.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\Common\RTSPCommon.h"
+				RelativePath="..\Common\RTSPCommon.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\Common\RTSPCommonEnv.cpp"
+				RelativePath="..\Common\RTSPCommonEnv.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\Common\RTSPCommonEnv.h"
+				RelativePath="..\Common\RTSPCommonEnv.h"
 				>
 			</File>
 		</Filter>
@@ -311,31 +311,31 @@
 			Name="Util"
 			>
 			<File
-				RelativePath="..\..\Util\Base64.cpp"
+				RelativePath="..\Util\Base64.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\Util\Base64.hh"
+				RelativePath="..\Util\Base64.hh"
 				>
 			</File>
 			<File
-				RelativePath="..\..\Util\our_md5.c"
+				RelativePath="..\Util\our_md5.c"
 				>
 			</File>
 			<File
-				RelativePath="..\..\Util\our_md5.h"
+				RelativePath="..\Util\our_md5.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\Util\our_md5hl.c"
+				RelativePath="..\Util\our_md5hl.c"
 				>
 			</File>
 			<File
-				RelativePath="..\..\Util\util.cpp"
+				RelativePath="..\Util\util.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\Util\util.h"
+				RelativePath="..\Util\util.h"
 				>
 			</File>
 		</Filter>
@@ -343,27 +343,27 @@
 			Name="Sock"
 			>
 			<File
-				RelativePath="..\..\Sock\MySock.cpp"
+				RelativePath="..\Sock\MySock.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\Sock\MySock.h"
+				RelativePath="..\Sock\MySock.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\Sock\SockCommon.cpp"
+				RelativePath="..\Sock\SockCommon.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\Sock\SockCommon.h"
+				RelativePath="..\Sock\SockCommon.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\Sock\TaskScheduler.cpp"
+				RelativePath="..\Sock\TaskScheduler.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\Sock\TaskScheduler.h"
+				RelativePath="..\Sock\TaskScheduler.h"
 				>
 			</File>
 		</Filter>
@@ -371,43 +371,43 @@
 			Name="RTSP"
 			>
 			<File
-				RelativePath="..\..\RTSPServer\RTSP\ClientSocket.cpp"
+				RelativePath="..\RTSPServer\RTSP\ClientSocket.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\RTSPServer\RTSP\ClientSocket.h"
+				RelativePath="..\RTSPServer\RTSP\ClientSocket.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\RTSPServer\RTSP\LiveServerMediaSession.cpp"
+				RelativePath="..\RTSPServer\RTSP\LiveServerMediaSession.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\RTSPServer\RTSP\LiveServerMediaSession.h"
+				RelativePath="..\RTSPServer\RTSP\LiveServerMediaSession.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\RTSPServer\RTSP\OnDemandServerMediaSession.cpp"
+				RelativePath="..\RTSPServer\RTSP\OnDemandServerMediaSession.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\RTSPServer\RTSP\OnDemandServerMediaSession.h"
+				RelativePath="..\RTSPServer\RTSP\OnDemandServerMediaSession.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\RTSPServer\RTSP\RTSPServer.cpp"
+				RelativePath="..\RTSPServer\RTSP\RTSPServer.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\RTSPServer\RTSP\RTSPServer.h"
+				RelativePath="..\RTSPServer\RTSP\RTSPServer.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\RTSPServer\RTSP\ServerMediaSession.cpp"
+				RelativePath="..\RTSPServer\RTSP\ServerMediaSession.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\RTSPServer\RTSP\ServerMediaSession.h"
+				RelativePath="..\RTSPServer\RTSP\ServerMediaSession.h"
 				>
 			</File>
 		</Filter>
@@ -415,7 +415,7 @@
 			Name="OS_Common"
 			>
 			<File
-				RelativePath="..\..\OS_Common\NetCommon.h"
+				RelativePath="..\OS_Common\NetCommon.h"
 				>
 			</File>
 		</Filter>

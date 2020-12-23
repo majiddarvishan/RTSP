@@ -18,99 +18,99 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\RTSPServer\Common\MyList.h">
+    <ClInclude Include="..\RTSPServer\Common\MyList.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\RTSPServer\Common\NetAddress.h">
+    <ClInclude Include="..\RTSPServer\Common\NetAddress.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Common\RTSPCommon.h">
+    <ClInclude Include="..\Common\RTSPCommon.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Common\RTSPCommonEnv.h">
+    <ClInclude Include="..\Common\RTSPCommonEnv.h">
       <Filter>Common</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Util\Base64.hh">
+    <ClInclude Include="..\Util\Base64.hh">
       <Filter>Util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Util\our_md5.h">
+    <ClInclude Include="..\Util\our_md5.h">
       <Filter>Util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Util\util.h">
+    <ClInclude Include="..\Util\util.h">
       <Filter>Util</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Sock\MySock.h">
+    <ClInclude Include="..\Sock\MySock.h">
       <Filter>Sock</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Sock\SockCommon.h">
+    <ClInclude Include="..\Sock\SockCommon.h">
       <Filter>Sock</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Sock\TaskScheduler.h">
+    <ClInclude Include="..\Sock\TaskScheduler.h">
       <Filter>Sock</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\RTSPServer\RTSP\ClientSocket.h">
+    <ClInclude Include="..\RTSPServer\RTSP\ClientSocket.h">
       <Filter>RTSP</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\RTSPServer\RTSP\LiveServerMediaSession.h">
+    <ClInclude Include="..\RTSPServer\RTSP\LiveServerMediaSession.h">
       <Filter>RTSP</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\RTSPServer\RTSP\OnDemandServerMediaSession.h">
+    <ClInclude Include="..\RTSPServer\RTSP\OnDemandServerMediaSession.h">
       <Filter>RTSP</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\RTSPServer\RTSP\RTSPServer.h">
+    <ClInclude Include="..\RTSPServer\RTSP\RTSPServer.h">
       <Filter>RTSP</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\RTSPServer\RTSP\ServerMediaSession.h">
+    <ClInclude Include="..\RTSPServer\RTSP\ServerMediaSession.h">
       <Filter>RTSP</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\OS_Common\NetCommon.h">
+    <ClInclude Include="..\OS_Common\NetCommon.h">
       <Filter>OS_Common</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\RTSPServer\Common\NetAddress.cpp">
+    <ClCompile Include="..\RTSPServer\Common\NetAddress.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Common\RTSPCommon.cpp">
+    <ClCompile Include="..\Common\RTSPCommon.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Common\RTSPCommonEnv.cpp">
+    <ClCompile Include="..\Common\RTSPCommonEnv.cpp">
       <Filter>Common</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Util\Base64.cpp">
+    <ClCompile Include="..\Util\Base64.cpp">
       <Filter>Util</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Util\our_md5.c">
+    <ClCompile Include="..\Util\our_md5.c">
       <Filter>Util</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Util\our_md5hl.c">
+    <ClCompile Include="..\Util\our_md5hl.c">
       <Filter>Util</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Util\util.cpp">
+    <ClCompile Include="..\Util\util.cpp">
       <Filter>Util</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Sock\MySock.cpp">
+    <ClCompile Include="..\Sock\MySock.cpp">
       <Filter>Sock</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Sock\SockCommon.cpp">
+    <ClCompile Include="..\Sock\SockCommon.cpp">
       <Filter>Sock</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Sock\TaskScheduler.cpp">
+    <ClCompile Include="..\Sock\TaskScheduler.cpp">
       <Filter>Sock</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\RTSPServer\RTSP\ClientSocket.cpp">
+    <ClCompile Include="..\RTSPServer\RTSP\ClientSocket.cpp">
       <Filter>RTSP</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\RTSPServer\RTSP\LiveServerMediaSession.cpp">
+    <ClCompile Include="..\RTSPServer\RTSP\LiveServerMediaSession.cpp">
       <Filter>RTSP</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\RTSPServer\RTSP\OnDemandServerMediaSession.cpp">
+    <ClCompile Include="..\RTSPServer\RTSP\OnDemandServerMediaSession.cpp">
       <Filter>RTSP</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\RTSPServer\RTSP\RTSPServer.cpp">
+    <ClCompile Include="..\RTSPServer\RTSP\RTSPServer.cpp">
       <Filter>RTSP</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\RTSPServer\RTSP\ServerMediaSession.cpp">
+    <ClCompile Include="..\RTSPServer\RTSP\ServerMediaSession.cpp">
       <Filter>RTSP</Filter>
     </ClCompile>
   </ItemGroup>

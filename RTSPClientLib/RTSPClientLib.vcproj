@@ -44,7 +44,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\..\Common;..\..\Sock;..\..\Util;..\..\OS_Common;..\..\RTSPClient\Common;..\..\RTSPClient\RTSP;..\..\RTSPClient\RTCP;..\..\RTSPClient\RTP"
+				AdditionalIncludeDirectories="..\Common;..\Sock;..\Util;..\OS_Common;..\RTSPClient\Common;..\RTSPClient\RTSP;..\RTSPClient\RTCP;..\RTSPClient\RTP"
 				PreprocessorDefinitions="WIN32;_DEBUG;_LIB;RTSP_CLIENT"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -107,7 +107,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="..\..\Common;..\..\Sock;..\..\Util;..\..\OS_Common;..\..\RTSPClient\Common;..\..\RTSPClient\RTSP;..\..\RTSPClient\RTCP;..\..\RTSPClient\RTP"
+				AdditionalIncludeDirectories="..\Common;..\Sock;..\Util;..\OS_Common;..\RTSPClient\Common;..\RTSPClient\RTSP;..\RTSPClient\RTCP;..\RTSPClient\RTP"
 				PreprocessorDefinitions="WIN32;_DEBUG;_LIB;RTSP_CLIENT"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -171,7 +171,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				EnableIntrinsicFunctions="true"
-				AdditionalIncludeDirectories="..\..\Common;..\..\Sock;..\..\Util;..\..\OS_Common;..\..\RTSPClient\Common;..\..\RTSPClient\RTSP;..\..\RTSPClient\RTCP;..\..\RTSPClient\RTP"
+				AdditionalIncludeDirectories="..\Common;..\Sock;..\Util;..\OS_Common;..\RTSPClient\Common;..\RTSPClient\RTSP;..\RTSPClient\RTCP;..\RTSPClient\RTP"
 				PreprocessorDefinitions="WIN32;NDEBUG;_LIB;RTSP_CLIENT"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
@@ -235,7 +235,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				EnableIntrinsicFunctions="true"
-				AdditionalIncludeDirectories="..\..\Common;..\..\Sock;..\..\Util;..\..\OS_Common;..\..\RTSPClient\Common;..\..\RTSPClient\RTSP;..\..\RTSPClient\RTCP;..\..\RTSPClient\RTP"
+				AdditionalIncludeDirectories="..\Common;..\Sock;..\Util;..\OS_Common;..\RTSPClient\Common;..\RTSPClient\RTSP;..\RTSPClient\RTCP;..\RTSPClient\RTP"
 				PreprocessorDefinitions="WIN32;NDEBUG;_LIB;RTSP_CLIENT"
 				RuntimeLibrary="2"
 				EnableFunctionLevelLinking="true"
@@ -279,27 +279,27 @@
 			Name="Common"
 			>
 			<File
-				RelativePath="..\..\RTSPClient\Common\DigestAuthentication.cpp"
+				RelativePath="..\RTSPClient\Common\DigestAuthentication.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\RTSPClient\Common\DigestAuthentication.hh"
+				RelativePath="..\RTSPClient\Common\DigestAuthentication.hh"
 				>
 			</File>
 			<File
-				RelativePath="..\..\Common\RTSPCommon.cpp"
+				RelativePath="..\Common\RTSPCommon.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\Common\RTSPCommon.h"
+				RelativePath="..\Common\RTSPCommon.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\Common\RTSPCommonEnv.cpp"
+				RelativePath="..\Common\RTSPCommonEnv.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\Common\RTSPCommonEnv.h"
+				RelativePath="..\Common\RTSPCommonEnv.h"
 				>
 			</File>
 		</Filter>
@@ -307,51 +307,51 @@
 			Name="RTCP"
 			>
 			<File
-				RelativePath="..\..\RTSPClient\RTCP\BasicHashTable.cpp"
+				RelativePath="..\RTSPClient\RTCP\BasicHashTable.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\RTSPClient\RTCP\BasicHashTable.hh"
+				RelativePath="..\RTSPClient\RTCP\BasicHashTable.hh"
 				>
 			</File>
 			<File
-				RelativePath="..\..\RTSPClient\RTCP\HashTable.cpp"
+				RelativePath="..\RTSPClient\RTCP\HashTable.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\RTSPClient\RTCP\HashTable.hh"
+				RelativePath="..\RTSPClient\RTCP\HashTable.hh"
 				>
 			</File>
 			<File
-				RelativePath="..\..\RTSPClient\RTCP\OutPacketBuffer.cpp"
+				RelativePath="..\RTSPClient\RTCP\OutPacketBuffer.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\RTSPClient\RTCP\OutPacketBuffer.h"
+				RelativePath="..\RTSPClient\RTCP\OutPacketBuffer.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\RTSPClient\RTCP\RTCP.cpp"
+				RelativePath="..\RTSPClient\RTCP\RTCP.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\RTSPClient\RTCP\RTCP.h"
+				RelativePath="..\RTSPClient\RTCP\RTCP.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\RTSPClient\RTCP\rtcp_from_spec.c"
+				RelativePath="..\RTSPClient\RTCP\rtcp_from_spec.c"
 				>
 			</File>
 			<File
-				RelativePath="..\..\RTSPClient\RTCP\rtcp_from_spec.h"
+				RelativePath="..\RTSPClient\RTCP\rtcp_from_spec.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\RTSPClient\RTCP\RTCPInstance.cpp"
+				RelativePath="..\RTSPClient\RTCP\RTCPInstance.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\RTSPClient\RTCP\RTCPInstance.h"
+				RelativePath="..\RTSPClient\RTCP\RTCPInstance.h"
 				>
 			</File>
 		</Filter>
@@ -359,51 +359,51 @@
 			Name="RTP"
 			>
 			<File
-				RelativePath="..\..\RTSPClient\RTP\AC3RTPSource.cpp"
+				RelativePath="..\RTSPClient\RTP\AC3RTPSource.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\RTSPClient\RTP\AC3RTPSource.h"
+				RelativePath="..\RTSPClient\RTP\AC3RTPSource.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\RTSPClient\RTP\H264RTPSource.cpp"
+				RelativePath="..\RTSPClient\RTP\H264RTPSource.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\RTSPClient\RTP\H264RTPSource.h"
+				RelativePath="..\RTSPClient\RTP\H264RTPSource.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\RTSPClient\RTP\JPEGRTPSource.cpp"
+				RelativePath="..\RTSPClient\RTP\JPEGRTPSource.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\RTSPClient\RTP\JPEGRTPSource.h"
+				RelativePath="..\RTSPClient\RTP\JPEGRTPSource.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\RTSPClient\RTP\MPEG4ESRTPSource.cpp"
+				RelativePath="..\RTSPClient\RTP\MPEG4ESRTPSource.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\RTSPClient\RTP\MPEG4ESRTPSource.h"
+				RelativePath="..\RTSPClient\RTP\MPEG4ESRTPSource.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\RTSPClient\RTP\RTPPacketBuffer.cpp"
+				RelativePath="..\RTSPClient\RTP\RTPPacketBuffer.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\RTSPClient\RTP\RTPPacketBuffer.h"
+				RelativePath="..\RTSPClient\RTP\RTPPacketBuffer.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\RTSPClient\RTP\RTPSource.cpp"
+				RelativePath="..\RTSPClient\RTP\RTPSource.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\RTSPClient\RTP\RTPSource.h"
+				RelativePath="..\RTSPClient\RTP\RTPSource.h"
 				>
 			</File>
 		</Filter>
@@ -411,19 +411,19 @@
 			Name="RTSP"
 			>
 			<File
-				RelativePath="..\..\RTSPClient\RTSP\MediaSession.cpp"
+				RelativePath="..\RTSPClient\RTSP\MediaSession.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\RTSPClient\RTSP\MediaSession.h"
+				RelativePath="..\RTSPClient\RTSP\MediaSession.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\RTSPClient\RTSP\RTSPClient.cpp"
+				RelativePath="..\RTSPClient\RTSP\RTSPClient.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\RTSPClient\RTSP\RTSPClient.h"
+				RelativePath="..\RTSPClient\RTSP\RTSPClient.h"
 				>
 			</File>
 		</Filter>
@@ -431,27 +431,27 @@
 			Name="Sock"
 			>
 			<File
-				RelativePath="..\..\Sock\MySock.cpp"
+				RelativePath="..\Sock\MySock.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\Sock\MySock.h"
+				RelativePath="..\Sock\MySock.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\Sock\SockCommon.cpp"
+				RelativePath="..\Sock\SockCommon.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\Sock\SockCommon.h"
+				RelativePath="..\Sock\SockCommon.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\Sock\TaskScheduler.cpp"
+				RelativePath="..\Sock\TaskScheduler.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\Sock\TaskScheduler.h"
+				RelativePath="..\Sock\TaskScheduler.h"
 				>
 			</File>
 		</Filter>
@@ -459,31 +459,31 @@
 			Name="Util"
 			>
 			<File
-				RelativePath="..\..\Util\Base64.cpp"
+				RelativePath="..\Util\Base64.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\Util\Base64.hh"
+				RelativePath="..\Util\Base64.hh"
 				>
 			</File>
 			<File
-				RelativePath="..\..\Util\our_md5.c"
+				RelativePath="..\Util\our_md5.c"
 				>
 			</File>
 			<File
-				RelativePath="..\..\Util\our_md5.h"
+				RelativePath="..\Util\our_md5.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\Util\our_md5hl.c"
+				RelativePath="..\Util\our_md5hl.c"
 				>
 			</File>
 			<File
-				RelativePath="..\..\Util\util.cpp"
+				RelativePath="..\Util\util.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\Util\util.h"
+				RelativePath="..\Util\util.h"
 				>
 			</File>
 		</Filter>
@@ -491,31 +491,31 @@
 			Name="OS_Common"
 			>
 			<File
-				RelativePath="..\..\OS_Common\Event.cpp"
+				RelativePath="..\OS_Common\Event.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\OS_Common\Event.h"
+				RelativePath="..\OS_Common\Event.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\OS_Common\Mutex.cpp"
+				RelativePath="..\OS_Common\Mutex.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\OS_Common\Mutex.h"
+				RelativePath="..\OS_Common\Mutex.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\OS_Common\NetCommon.h"
+				RelativePath="..\OS_Common\NetCommon.h"
 				>
 			</File>
 			<File
-				RelativePath="..\..\OS_Common\Thread.cpp"
+				RelativePath="..\OS_Common\Thread.cpp"
 				>
 			</File>
 			<File
-				RelativePath="..\..\OS_Common\Thread.h"
+				RelativePath="..\OS_Common\Thread.h"
 				>
 			</File>
 		</Filter>
