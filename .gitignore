@@ -1,0 +1,9 @@
+win32/RTSPClientDll/Debug/
+win32/RTSPClientDll/RTSPClientDll.vcxproj.user
+win32/RTSPClientDll/x64/
+win32/RTSPClientLib/Debug/
+win32/RTSPClientLib/RTSPClientLib.vcxproj.user
+win32/RTSPClientLib/x64/
+win32/RTSPClientTest/.vs/
+win32/RTSPClientTest/RTSPClientTest.vcxproj.user
+win32/RTSPClientTest/x64/

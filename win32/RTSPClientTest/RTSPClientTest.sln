@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28721.148
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RTSPClientTest", "RTSPClientTest.vcxproj", "{CE6CF4AD-B1DC-42E1-B0F3-E5CFF4452EC0}"
 	ProjectSection(ProjectDependencies) = postProject
 		{4C9E5E1A-FD1F-428F-B6E1-7711AFFD2A12} = {4C9E5E1A-FD1F-428F-B6E1-7711AFFD2A12}
@@ -8,6 +10,9 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RTSPClientTest", "RTSPClien
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RTSPClientLib", "..\RTSPClientLib\RTSPClientLib.vcxproj", "{4C9E5E1A-FD1F-428F-B6E1-7711AFFD2A12}"
+	ProjectSection(ProjectDependencies) = postProject
+		{69A347A8-7926-43BD-B91A-7DAE5BD3355D} = {69A347A8-7926-43BD-B91A-7DAE5BD3355D}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RTSPClientDll", "..\RTSPClientDll\RTSPClientDll.vcxproj", "{69A347A8-7926-43BD-B91A-7DAE5BD3355D}"
 EndProject
@@ -46,5 +51,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {39A6BDF8-5701-4951-BA96-1897A7D168EF}
 	EndGlobalSection
 EndGlobal
