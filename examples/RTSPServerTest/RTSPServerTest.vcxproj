@@ -188,11 +188,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\tests\RTSPLiveStreamer.cpp" />
-    <ClCompile Include="..\..\tests\rtspserver.cpp" />
+    <ClCompile Include="RTSPLiveStreamer.cpp" />
+    <ClCompile Include="rtspserver.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\tests\RTSPLiveStreamer.h" />
+    <ClInclude Include="RTSPLiveStreamer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
