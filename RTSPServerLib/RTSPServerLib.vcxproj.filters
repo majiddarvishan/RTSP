@@ -18,12 +18,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\RTSPServer\Common\MyList.h">
-      <Filter>Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\RTSPServer\Common\NetAddress.h">
-      <Filter>Common</Filter>
-    </ClInclude>
     <ClInclude Include="..\Common\RTSPCommon.h">
       <Filter>Common</Filter>
     </ClInclude>
@@ -48,29 +42,32 @@
     <ClInclude Include="..\Sock\TaskScheduler.h">
       <Filter>Sock</Filter>
     </ClInclude>
-    <ClInclude Include="..\RTSPServer\RTSP\ClientSocket.h">
-      <Filter>RTSP</Filter>
-    </ClInclude>
-    <ClInclude Include="..\RTSPServer\RTSP\LiveServerMediaSession.h">
-      <Filter>RTSP</Filter>
-    </ClInclude>
-    <ClInclude Include="..\RTSPServer\RTSP\OnDemandServerMediaSession.h">
-      <Filter>RTSP</Filter>
-    </ClInclude>
-    <ClInclude Include="..\RTSPServer\RTSP\RTSPServer.h">
-      <Filter>RTSP</Filter>
-    </ClInclude>
-    <ClInclude Include="..\RTSPServer\RTSP\ServerMediaSession.h">
-      <Filter>RTSP</Filter>
-    </ClInclude>
     <ClInclude Include="..\OS_Common\NetCommon.h">
       <Filter>OS_Common</Filter>
     </ClInclude>
+    <ClInclude Include="Common\MyList.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\NetAddress.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="RTSP\ClientSocket.h">
+      <Filter>RTSP</Filter>
+    </ClInclude>
+    <ClInclude Include="RTSP\LiveServerMediaSession.h">
+      <Filter>RTSP</Filter>
+    </ClInclude>
+    <ClInclude Include="RTSP\OnDemandServerMediaSession.h">
+      <Filter>RTSP</Filter>
+    </ClInclude>
+    <ClInclude Include="RTSP\RTSPServer.h">
+      <Filter>RTSP</Filter>
+    </ClInclude>
+    <ClInclude Include="RTSP\ServerMediaSession.h">
+      <Filter>RTSP</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\RTSPServer\Common\NetAddress.cpp">
-      <Filter>Common</Filter>
-    </ClCompile>
     <ClCompile Include="..\Common\RTSPCommon.cpp">
       <Filter>Common</Filter>
     </ClCompile>
@@ -98,19 +95,22 @@
     <ClCompile Include="..\Sock\TaskScheduler.cpp">
       <Filter>Sock</Filter>
     </ClCompile>
-    <ClCompile Include="..\RTSPServer\RTSP\ClientSocket.cpp">
+    <ClCompile Include="Common\NetAddress.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="RTSP\ClientSocket.cpp">
       <Filter>RTSP</Filter>
     </ClCompile>
-    <ClCompile Include="..\RTSPServer\RTSP\LiveServerMediaSession.cpp">
+    <ClCompile Include="RTSP\LiveServerMediaSession.cpp">
       <Filter>RTSP</Filter>
     </ClCompile>
-    <ClCompile Include="..\RTSPServer\RTSP\OnDemandServerMediaSession.cpp">
+    <ClCompile Include="RTSP\OnDemandServerMediaSession.cpp">
       <Filter>RTSP</Filter>
     </ClCompile>
-    <ClCompile Include="..\RTSPServer\RTSP\RTSPServer.cpp">
+    <ClCompile Include="RTSP\RTSPServer.cpp">
       <Filter>RTSP</Filter>
     </ClCompile>
-    <ClCompile Include="..\RTSPServer\RTSP\ServerMediaSession.cpp">
+    <ClCompile Include="RTSP\ServerMediaSession.cpp">
       <Filter>RTSP</Filter>
     </ClCompile>
   </ItemGroup>
