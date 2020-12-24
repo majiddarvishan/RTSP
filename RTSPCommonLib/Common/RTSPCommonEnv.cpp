@@ -41,15 +41,12 @@ void RTSPCommonEnv::DebugPrint(char *lpszFormat, ...)
 	memcpy(buffer, prefix, prefix_len);
 
 	vsprintf(&buffer[prefix_len], lpszFormat, args);
-
-    if (nDebugPrint == 0)
-    {
-        fprintf(stdout, buffer);
-    }
-    else if (nDebugPrint == 1)
-    {
-        OutputDebugString(buffer);
-    }
+#ifdef WIN32
+	if (nDebugPrint == 0) fprintf(stdout, buffer);
+	else if (nDebugPrint == 1) OutputDebugString(buffer);
+#else
+	fprintf(stdout, buffer);
+#endif
 
 	free(buffer);
 }

@@ -329,18 +329,16 @@ unsigned RTSPClient::getResponse1(char*& responseBuffer, unsigned responseBuffer
 
 void RTSPClient::tcpReadError(int result)
 {
-    int err = WSAGetLastError();
-
-    DPRINTF("failed to read RTSP, err: %d, result: %d\n", err, result);
-
-    if (err == WSAECONNRESET)
-    {
-        DPRINTF0("connection was closed by remote host\n");
-    }
-    else if (err == WSAECONNABORTED)
-    {
-        DPRINTF0("connection was closed by local host\n");
-    }
+	int err = WSAGetLastError();
+	
+	DPRINTF("failed to read RTSP, err: %d, result: %d\n", err, result);
+	
+#ifdef WIN32
+	if (err == WSAECONNRESET)
+		DPRINTF0("connection was closed by remote host\n");
+	else if (err == WSAECONNABORTED)
+		DPRINTF0("connection was closed by local host\n");
+#endif
 
 	fTask->turnOffBackgroundReadHandling(fRtspSock.sock());
 

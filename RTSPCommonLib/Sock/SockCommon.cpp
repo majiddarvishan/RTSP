@@ -2,7 +2,11 @@
 #include "RTSPCommonEnv.h"
 #include <stdio.h>
 
+#ifdef WIN32
 #pragma comment(lib, "ws2_32.lib")
+#elif defined(LINUX)
+#include <string.h>
+#endif
 
 #define MAKE_SOCKADDR_IN(var,adr,prt) /*adr,prt must be in network order*/\
     struct sockaddr_in var;\
@@ -10,6 +14,7 @@
     var.sin_addr.s_addr = (adr);\
     var.sin_port = htons(prt);\
 
+#ifdef WIN32
 #define WS_VERSION_CHOICE1 0x202/*MAKEWORD(2,2)*/
 #define WS_VERSION_CHOICE2 0x101/*MAKEWORD(1,1)*/
 int initializeWinsockIfNecessary(void) {
@@ -34,6 +39,9 @@ int initializeWinsockIfNecessary(void) {
 
 	return 1;
 }
+#else
+#define initializeWinsockIfNecessary()	1
+#endif
 
 void socketErr(char *lpszFormat,...)
 {
@@ -48,6 +56,7 @@ void socketErr(char *lpszFormat,...)
 
 	vsprintf(buffer, lpszFormat, args);
 
+#ifdef WIN32
 	if (RTSPCommonEnv::nDebugPrint == 0) 
     {
 		fprintf(stdout, buffer);
@@ -60,6 +69,10 @@ void socketErr(char *lpszFormat,...)
 		sprintf(tmp, "%d\n", WSAGetLastError());
 		OutputDebugString(tmp);
 	}
+#else
+	fprintf(stdout, buffer);
+	fprintf(stdout, "%d\n", WSAGetLastError());
+#endif
 
 	free(buffer);
 }
@@ -68,23 +81,20 @@ static int reuseFlag = 1;
 
 int setupStreamSock(short port, int makeNonBlocking)
 {
-	if (!initializeWinsockIfNecessary()) 
-    {
+	if (!initializeWinsockIfNecessary()) {
 		socketErr("[%s] Failed to initialize 'winsock': ", __FUNCTION__);
 		return -1;
 	}
 
 	int newSocket = socket(AF_INET, SOCK_STREAM, 0);
-	if (newSocket < 0) 
-    {
+	if (newSocket < 0) {
 		DPRINTF("%s:%d\n",__FUNCTION__,__LINE__);
 		socketErr("[%s] unable to create stream socket: ", __FUNCTION__);
 		return newSocket;
 	}
 
 	if (setsockopt(newSocket, SOL_SOCKET, SO_REUSEADDR,
-		(const char*)&reuseFlag, sizeof reuseFlag) != 0) 
-    {
+		(const char*)&reuseFlag, sizeof reuseFlag) != 0) {
 			socketErr("[%s] setsockopt(SO_REUSEADDR) error: ", __FUNCTION__);
 			closeSocket(newSocket);
 			return -1;
@@ -96,8 +106,7 @@ int setupStreamSock(short port, int makeNonBlocking)
 	c_addr.sin_family = AF_INET;
 	c_addr.sin_port = htons(port);
 
-	if (bind(newSocket, (struct sockaddr*)&c_addr, sizeof c_addr) != 0) 
-    {
+	if (bind(newSocket, (struct sockaddr*)&c_addr, sizeof c_addr) != 0) {
 		socketErr("[%s] bind() error (port number: %d): ", __FUNCTION__, port);
 		closeSocket(newSocket);
 		return -1;
@@ -193,8 +202,13 @@ int setupClientSock(int serverSock, int makeNonBlocking, struct sockaddr_in& cli
 
 int makeSocketNonBlocking(int sock)
 {
+#ifdef WIN32
 	unsigned long arg = 1;
 	return ioctlsocket(sock, FIONBIO, &arg) == 0;
+#else
+	int curFlags = fcntl(sock, F_GETFL, 0);
+	return fcntl(sock, F_SETFL, curFlags|O_NONBLOCK) >= 0;
+#endif
 }
 
 int makeTCP_NoDelay(int sock)
@@ -413,10 +427,13 @@ int sendRTPOverTCP(int sock, char *buffer, int len, unsigned char streamChannelI
 
 void shutdown(int sock)
 {
-    if (shutdown(sock, SD_SEND) != 0)
-    {
-        socketErr("shutdown error: ");
-    }
+#ifdef WIN32
+	if (shutdown(sock, SD_SEND) != 0)
+		socketErr("shutdown error: ");
+#else
+	if (shutdown(sock, SHUT_RD) != 0)
+		socketErr("shutdown error: ");
+#endif
 }
 
 bool isMulticastAddress(unsigned int address)

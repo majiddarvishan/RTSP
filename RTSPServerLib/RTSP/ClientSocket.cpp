@@ -12,15 +12,12 @@ ClientSocket::ClientSocket(MySock& rtpSock, sockaddr_in& rtpDestAddr, MySock& rt
 
 ClientSocket::~ClientSocket()
 {
-	if (!fIsTCP) 
-    {
-		if (fRtpSock) 
-        {
+	if (!fIsTCP) {
+		if (fRtpSock) {
 			fRtpSock->closeSock();
 			delete fRtpSock;
 		}
-		if (fRtcpSock) 
-        {
+		if (fRtcpSock) {
 			fRtcpSock->closeSock();
 			delete fRtcpSock;
 		}
@@ -29,24 +26,18 @@ ClientSocket::~ClientSocket()
 
 int ClientSocket::sendRTP(char *buf, int len)
 {
-	if (fIsTCP) 
-    {
+	if (fIsTCP) {
 		return fRtpSock->sendRTPOverTCP(buf, len, fRtpChannelId);
-	} 
-    else 
-    {
+	} else {
 		return fRtpSock->writeSocket(buf, len, fRtpDestAddr);
 	}
 }
 
 int ClientSocket::sendRTCP(char *buf, int len)
 {
-	if (fIsTCP) 
-    {
+	if (fIsTCP) {
 		return fRtcpSock->sendRTPOverTCP(buf, len, fRtcpChannelId);
-	}
-    else 
-    {
+	} else {
 		return fRtcpSock->writeSocket(buf, len, fRtcpDestAddr);
 	}
 }

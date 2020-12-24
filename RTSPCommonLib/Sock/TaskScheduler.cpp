@@ -117,17 +117,16 @@ void TaskScheduler::SingleStep()
 	int selectResult = select(fMaxNumSockets, &readSet, NULL, NULL, &timeout);
 	if (selectResult < 0) {
 		int err = WSAGetLastError();
-
+#ifdef WIN32
 		// For some unknown reason, select() in Windoze sometimes fails with WSAEINVAL if
 		// it was called with no entries set in "readSet".  If this happens, ignore it:
-		if (err == WSAEINVAL && readSet.fd_count == 0) 
-        {
+		if (err == WSAEINVAL && readSet.fd_count == 0) {
 			err = 0;
 			// To stop this from happening again, create a dummy readable socket:
 			int dummySocketNum = socket(AF_INET, SOCK_DGRAM, 0);
 			FD_SET((unsigned)dummySocketNum, &fReadSet);
 		}
-
+#endif
 		if (err != 0) {
 			// Unexpected error - treat this as fatal:
 			//DPRINTF("TaskScheduler::SingleStep(): select() fails");

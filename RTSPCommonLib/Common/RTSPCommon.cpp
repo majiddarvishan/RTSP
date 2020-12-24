@@ -5,7 +5,12 @@
 #include "RTSPCommonEnv.h"
 #include "util.h"
 
+#ifdef WIN32
 extern int initializeWinsockIfNecessary(void);
+#else
+#include <netdb.h>
+#define initializeWinsockIfNecessary()	1
+#endif
 
 bool seqNumLT(u_int16_t s1, u_int16_t s2) 
 {

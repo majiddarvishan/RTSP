@@ -1,7 +1,12 @@
 #ifndef __RTSP_COMMON_ENV_H__
 #define __RTSP_COMMON_ENV_H__
 
+#ifdef WIN32
 #include <windows.h>
+#else
+#include <stdarg.h>
+extern int _vscprintf (const char * format, va_list pargs);
+#endif
 
 #define DPRINTF		RTSPCommonEnv::DebugPrint
 #define DPRINTF0	RTSPCommonEnv::DebugPrint
