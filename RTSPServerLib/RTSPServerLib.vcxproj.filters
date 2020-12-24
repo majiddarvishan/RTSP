@@ -13,9 +13,6 @@
     <Filter Include="RTSP">
       <UniqueIdentifier>{3b71cc6e-667d-4944-a3e8-219f029496cc}</UniqueIdentifier>
     </Filter>
-    <Filter Include="OS_Common">
-      <UniqueIdentifier>{f75c836c-d62e-491a-8cbd-7ee57d74988f}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Common\RTSPCommon.h">
@@ -42,9 +39,6 @@
     <ClInclude Include="..\Sock\TaskScheduler.h">
       <Filter>Sock</Filter>
     </ClInclude>
-    <ClInclude Include="..\OS_Common\NetCommon.h">
-      <Filter>OS_Common</Filter>
-    </ClInclude>
     <ClInclude Include="Common\MyList.h">
       <Filter>Common</Filter>
     </ClInclude>
@@ -65,6 +59,9 @@
     </ClInclude>
     <ClInclude Include="RTSP\ServerMediaSession.h">
       <Filter>RTSP</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Sock\NetCommon.h">
+      <Filter>Sock</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

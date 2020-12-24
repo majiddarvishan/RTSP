@@ -154,8 +154,8 @@
   <ItemGroup>
     <ClInclude Include="..\Common\RTSPCommon.h" />
     <ClInclude Include="..\Common\RTSPCommonEnv.h" />
-    <ClInclude Include="..\OS_Common\NetCommon.h" />
     <ClInclude Include="..\Sock\MySock.h" />
+    <ClInclude Include="..\Sock\NetCommon.h" />
     <ClInclude Include="..\Sock\SockCommon.h" />
     <ClInclude Include="..\Sock\TaskScheduler.h" />
     <ClInclude Include="..\Util\Base64.hh" />
