@@ -1,11 +1,7 @@
 #ifndef __NET_ADDRESS_H__
 #define __NET_ADDRESS_H__
 
-#ifdef WIN32
 #include <winsock2.h>
-#else
-#include <netinet/in.h>
-#endif
 
 typedef unsigned int netAddressBits;
 

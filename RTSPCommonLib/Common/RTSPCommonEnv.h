@@ -1,21 +1,10 @@
 #ifndef __RTSP_COMMON_ENV_H__
 #define __RTSP_COMMON_ENV_H__
 
-#ifdef WIN32
 #include <windows.h>
-#else
-#include <stdarg.h>
-extern int _vscprintf (const char * format, va_list pargs);
-#endif
 
-#ifdef ANDROID
-#include <android/log.h>
-#define DPRINTF(...)	__android_log_print(ANDROID_LOG_DEBUG, "RTSPClient", __VA_ARGS__)
-#define DPRINTF0(X)	__android_log_print(ANDROID_LOG_DEBUG, "RTSPClient", "%s\n", X)
-#else
 #define DPRINTF		RTSPCommonEnv::DebugPrint
 #define DPRINTF0	RTSPCommonEnv::DebugPrint
-#endif
 
 #define DEBUG_FLAG_RTSP			(0x01)
 #define DEBUG_FLAG_RTP			(0x02)

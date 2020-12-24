@@ -9,7 +9,6 @@ typedef unsigned char		u_int8_t;
 typedef unsigned short		u_int16_t;
 typedef unsigned int		u_int32_t;
 
-#ifdef WIN32
 typedef unsigned __int64	uint64_t;
 typedef unsigned __int64	u_int64_t;
 typedef __int64				int64_t;
@@ -18,11 +17,6 @@ typedef __int64				int64_t;
 
 #if _MSC_VER <= 1700
 #define snprintf	_snprintf
-#endif
-
-#else
-#include <inttypes.h>
-#define _strcasecmp	strncasecmp
 #endif
 
 #pragma pack(push, 1)

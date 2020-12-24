@@ -23,18 +23,15 @@ void RTSPServer::destroy()
 	}
 }
 
-char const* RTSPServer::allowedCommandNames() {
+char const* RTSPServer::allowedCommandNames() 
+{
 	return "OPTIONS, DESCRIBE, SETUP, TEARDOWN, PLAY, PAUSE, GET_PARAMETER, SET_PARAMETER";
 }
 
 RTSPServer::RTSPServer() : fIsServerRunning(false), fServerCallbackFunc(NULL)
 {
 	fTask = new TaskScheduler();
-#ifdef WIN32
 	srand(GetTickCount());
-#else
-	srand(clock());
-#endif
 }
 
 RTSPServer::~RTSPServer()
@@ -45,10 +42,12 @@ RTSPServer::~RTSPServer()
 
 int RTSPServer::startServer(unsigned short port, RTSPServerCallback func, void *arg)
 {
-	if (!fIsServerRunning) {
+	if (!fIsServerRunning) 
+    {
 		fServerPort = port;
 
-		if (fServerSock.setupServerSock(fServerPort, true) < 0) {
+		if (fServerSock.setupServerSock(fServerPort, true) < 0) 
+        {
 			DPRINTF("failed to start RTSP Server (%d)\n", fServerPort);
 			return -9;
 		}
@@ -71,18 +70,16 @@ int RTSPServer::startServer(unsigned short port, RTSPServerCallback func, void *
 
 void RTSPServer::stopServer()
 {	
-	if (fIsServerRunning) {
+	if (fIsServerRunning) 
+    {
 		// do not allow more client connection
 		fTask->turnOffBackgroundReadHandling(fServerSock.sock());
 		fServerSock.closeSock();
 
 		// wait until all client sessions are disconnected
-		while (fServerMediaSessions.count() > 0 || fClientSessions.count() > 0) {
-#ifdef WIN32
+		while (fServerMediaSessions.count() > 0 || fClientSessions.count() > 0) 
+        {
 			Sleep(10);
-#else
-			usleep(10*1000);
-#endif
 		}
 
 		// stop task loop
