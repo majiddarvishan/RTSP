@@ -3,6 +3,8 @@
 #include <iostream>
 
 #pragma comment(lib, "RTSPClientLib.lib")
+#pragma comment(lib, "RTSPCommonLib.lib")
+
 #include "RTSPClient.h"
 #include "RTSPCommonEnv.h"
 

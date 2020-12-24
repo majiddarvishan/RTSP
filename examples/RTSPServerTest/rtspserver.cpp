@@ -2,6 +2,8 @@
 #include "RTSPServer.h"
 #include "RTSPLiveStreamer.h"
 
+#pragma comment(lib, "RTSPCommonLib.lib")
+
 #ifdef WIN32
 #include <conio.h>
 #include <windows.h>

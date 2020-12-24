@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{13172f7c-e2cb-49c2-b9c7-7410efc153d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sock">
+      <UniqueIdentifier>{4f663126-c5dd-46f8-acc7-01c6e58af797}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{03d715d8-f10b-4169-9fbf-71b41df1ce84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OS_Common">
+      <UniqueIdentifier>{15cd4cd1-8a73-49f4-8037-ef3e8742a11d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Common\RTSPCommon.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\RTSPCommonEnv.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Sock\MySock.cpp">
+      <Filter>Sock</Filter>
+    </ClCompile>
+    <ClCompile Include="Sock\SockCommon.cpp">
+      <Filter>Sock</Filter>
+    </ClCompile>
+    <ClCompile Include="Sock\TaskScheduler.cpp">
+      <Filter>Sock</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\Base64.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\our_md5.c">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\our_md5hl.c">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Util\util.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="OS_Common\Event.cpp">
+      <Filter>OS_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="OS_Common\Mutex.cpp">
+      <Filter>OS_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="OS_Common\Thread.cpp">
+      <Filter>OS_Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\DigestAuthentication.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\BitVector.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="Common\NetAddress.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Common\RTSPCommon.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\RTSPCommonEnv.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Sock\MySock.h">
+      <Filter>Sock</Filter>
+    </ClInclude>
+    <ClInclude Include="Sock\SockCommon.h">
+      <Filter>Sock</Filter>
+    </ClInclude>
+    <ClInclude Include="Sock\TaskScheduler.h">
+      <Filter>Sock</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\Base64.hh">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\our_md5.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Util\util.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="OS_Common\Event.h">
+      <Filter>OS_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="OS_Common\Mutex.h">
+      <Filter>OS_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="OS_Common\NetCommon.h">
+      <Filter>OS_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="OS_Common\Thread.h">
+      <Filter>OS_Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DigestAuthentication.hh">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\BitVector.hh">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\MyList.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\NetAddress.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

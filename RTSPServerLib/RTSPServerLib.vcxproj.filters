@@ -1,50 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Common">
-      <UniqueIdentifier>{bc187bd5-e571-44b4-a943-386bc33fb10a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Util">
-      <UniqueIdentifier>{80f66236-1f76-44cc-b0c0-6c48aeaac7f5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Sock">
-      <UniqueIdentifier>{1bbb92a7-1e28-4eb1-bd60-7231a5d76ea6}</UniqueIdentifier>
-    </Filter>
     <Filter Include="RTSP">
       <UniqueIdentifier>{3b71cc6e-667d-4944-a3e8-219f029496cc}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\Common\RTSPCommon.h">
-      <Filter>Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Common\RTSPCommonEnv.h">
-      <Filter>Common</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Util\Base64.hh">
-      <Filter>Util</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Util\our_md5.h">
-      <Filter>Util</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Util\util.h">
-      <Filter>Util</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Sock\MySock.h">
-      <Filter>Sock</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Sock\SockCommon.h">
-      <Filter>Sock</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Sock\TaskScheduler.h">
-      <Filter>Sock</Filter>
-    </ClInclude>
-    <ClInclude Include="Common\MyList.h">
-      <Filter>Common</Filter>
-    </ClInclude>
-    <ClInclude Include="Common\NetAddress.h">
-      <Filter>Common</Filter>
-    </ClInclude>
     <ClInclude Include="RTSP\ClientSocket.h">
       <Filter>RTSP</Filter>
     </ClInclude>
@@ -60,41 +21,8 @@
     <ClInclude Include="RTSP\ServerMediaSession.h">
       <Filter>RTSP</Filter>
     </ClInclude>
-    <ClInclude Include="..\Sock\NetCommon.h">
-      <Filter>Sock</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\Common\RTSPCommon.cpp">
-      <Filter>Common</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Common\RTSPCommonEnv.cpp">
-      <Filter>Common</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Util\Base64.cpp">
-      <Filter>Util</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Util\our_md5.c">
-      <Filter>Util</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Util\our_md5hl.c">
-      <Filter>Util</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Util\util.cpp">
-      <Filter>Util</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Sock\MySock.cpp">
-      <Filter>Sock</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Sock\SockCommon.cpp">
-      <Filter>Sock</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Sock\TaskScheduler.cpp">
-      <Filter>Sock</Filter>
-    </ClCompile>
-    <ClCompile Include="Common\NetAddress.cpp">
-      <Filter>Common</Filter>
-    </ClCompile>
     <ClCompile Include="RTSP\ClientSocket.cpp">
       <Filter>RTSP</Filter>
     </ClCompile>

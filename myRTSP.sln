@@ -3,19 +3,29 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28721.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RTSPClientTest", "examples\RTSPClientTest\RTSPClientTest.vcxproj", "{CE6CF4AD-B1DC-42E1-B0F3-E5CFF4452EC0}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RTSPClientTest", "Examples\RTSPClientTest\RTSPClientTest.vcxproj", "{CE6CF4AD-B1DC-42E1-B0F3-E5CFF4452EC0}"
 	ProjectSection(ProjectDependencies) = postProject
 		{4C9E5E1A-FD1F-428F-B6E1-7711AFFD2A12} = {4C9E5E1A-FD1F-428F-B6E1-7711AFFD2A12}
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RTSPClientLib", "RTSPClientLib\RTSPClientLib.vcxproj", "{4C9E5E1A-FD1F-428F-B6E1-7711AFFD2A12}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CBC4ADE4-B3D4-4035-9141-B13CB659CE7F} = {CBC4ADE4-B3D4-4035-9141-B13CB659CE7F}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RTSPServerLib", "RTSPServerLib\RTSPServerLib.vcxproj", "{252D25BE-1744-42A9-9DCC-0596B975AC48}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RTSPServerTest", "examples\RTSPServerTest\RTSPServerTest.vcxproj", "{4D518CB4-A16A-4F2D-B9A5-BED375F5CDC4}"
 	ProjectSection(ProjectDependencies) = postProject
-		{252D25BE-1744-42A9-9DCC-0596B975AC48} = {252D25BE-1744-42A9-9DCC-0596B975AC48}
+		{CBC4ADE4-B3D4-4035-9141-B13CB659CE7F} = {CBC4ADE4-B3D4-4035-9141-B13CB659CE7F}
 	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RTSPServerTest", "Examples\RTSPServerTest\RTSPServerTest.vcxproj", "{4D518CB4-A16A-4F2D-B9A5-BED375F5CDC4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4C9E5E1A-FD1F-428F-B6E1-7711AFFD2A12} = {4C9E5E1A-FD1F-428F-B6E1-7711AFFD2A12}
+		{252D25BE-1744-42A9-9DCC-0596B975AC48} = {252D25BE-1744-42A9-9DCC-0596B975AC48}
+		{CBC4ADE4-B3D4-4035-9141-B13CB659CE7F} = {CBC4ADE4-B3D4-4035-9141-B13CB659CE7F}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RTSPCommonLib", "RTSPCommonLib\RTSPCommonLib.vcxproj", "{CBC4ADE4-B3D4-4035-9141-B13CB659CE7F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +67,14 @@ Global
 		{4D518CB4-A16A-4F2D-B9A5-BED375F5CDC4}.Release|Win32.Build.0 = Release|Win32
 		{4D518CB4-A16A-4F2D-B9A5-BED375F5CDC4}.Release|x64.ActiveCfg = Release|x64
 		{4D518CB4-A16A-4F2D-B9A5-BED375F5CDC4}.Release|x64.Build.0 = Release|x64
+		{CBC4ADE4-B3D4-4035-9141-B13CB659CE7F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CBC4ADE4-B3D4-4035-9141-B13CB659CE7F}.Debug|Win32.Build.0 = Debug|Win32
+		{CBC4ADE4-B3D4-4035-9141-B13CB659CE7F}.Debug|x64.ActiveCfg = Debug|x64
+		{CBC4ADE4-B3D4-4035-9141-B13CB659CE7F}.Debug|x64.Build.0 = Debug|x64
+		{CBC4ADE4-B3D4-4035-9141-B13CB659CE7F}.Release|Win32.ActiveCfg = Release|Win32
+		{CBC4ADE4-B3D4-4035-9141-B13CB659CE7F}.Release|Win32.Build.0 = Release|Win32
+		{CBC4ADE4-B3D4-4035-9141-B13CB659CE7F}.Release|x64.ActiveCfg = Release|x64
+		{CBC4ADE4-B3D4-4035-9141-B13CB659CE7F}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

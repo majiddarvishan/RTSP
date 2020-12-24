@@ -123,7 +123,7 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\..\OS_Common;..\..\Sock;..\..\Common;..\..\Util;..\..\RTSPServerLib\RTSP;..\..\RTSPServerLib\Common;..\..\RTSPClientLib\RTSP;..\..\RTSPClientLib\RTP;..\..\RTSPClientLib\RTCP;..\..\RTSPClientLib\Common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\RTSPCommonLib\OS_Common;..\..\RTSPCommonLib\Sock;..\..\RTSPCommonLib\Common;..\..\RTSPCommonLib\Util;..\..\RTSPServerLib\RTSP;..\..\RTSPClientLib\RTSP;..\..\RTSPClientLib\RTP;..\..\RTSPClientLib\RTCP;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
